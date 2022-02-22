@@ -1,0 +1,22 @@
+{
+  "name": "vue-pages-router",
+  "version": "0.0.1",
+  "description": "Automatic Router for Vue3 inspired by the awesome work of @NovoManu/vue-auto-router",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pisandelli/vue-pages-router.git"
+  },
+  "keywords": [
+    "vue",
+    "pages",
+    "router",
+    "auto"
+  ],
+  "author": "Pedro Pisandelli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pisandelli/vue-pages-router/issues"
+  },
+  "homepage": "https://github.com/pisandelli/vue-pages-router#readme"
+}
