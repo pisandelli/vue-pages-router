@@ -58,7 +58,7 @@ export default pages
   .filter(path => !path.some(childrenFilter))
   .map(async path => {
     const { default: component } = await import(`../../src/views/${path.join('/')}`)
-    const { layout, middlewares, name } = component
+    const { layout, middlewares, params, name } = component
     const route = `/${generateRoute([...path])}`
     let children = []
     if (childrenByPath[route]) {
@@ -68,6 +68,7 @@ export default pages
         const {
           layout: childLayout,
           middlewares: childMiddleware,
+          params: childParams,
           name: childName
         } = childComponent
         return {
@@ -76,7 +77,8 @@ export default pages
           component: childComponent,
           meta: {
             layout: childLayout || defaultLayout,
-            middlewares: childMiddleware || {}
+            middlewares: childMiddleware || {},
+            params: childParams || {}
           }
         }
       })
@@ -88,7 +90,8 @@ export default pages
       component,
       meta: {
         layout: layout || defaultLayout,
-        middlewares: middlewares || {}
+        middlewares: middlewares || {},
+        params: params || {}
       },
       children
     }

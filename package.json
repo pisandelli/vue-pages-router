@@ -1,6 +1,6 @@
 {
   "name": "vue-pages-router",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Automatic Router for Vue3 inspired by the awesome work of @NovoManu/vue-auto-router",
   "main": "index.js",
   "repository": {
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/pisandelli/vue-pages-router/issues"
   },
-  "homepage": "https://github.com/pisandelli/vue-pages-router#readme"
+  "homepage": "https://github.com/pisandelli/vue-pages-router#readme",
+  "dependencies": {
+    "vue-router": "^4.0.0"
+  }
 }
